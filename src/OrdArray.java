@@ -1,11 +1,14 @@
 public class OrdArray {
     public static void main(String[] args) {
-          OrderArray O =new OrderArray(5);
+          OrderArray O =new OrderArray(7);
           O.insert(5);
           O.insert(4);
           O.insert(3);
           O.insert(2);
           O.insert(8);
+//          O.display();
+        O.delete(20);
+        O.display();
     }
 }
 
@@ -34,7 +37,18 @@ class OrderArray {
                System.out.println("Array is full");
            }
            else {
-
+                for (int i=0;i<nElements;i++){
+                    if (a[i]> value){
+                        for (int j=nElements;j>i;j--){
+                            a[j]=a[j-1];
+                        }
+                        a[i]=value;
+                        nElements++;
+                        return;
+                    }
+                }
+                a[nElements]=value;
+                nElements++;
            }
     }
     public boolean delete(long value) {
@@ -47,6 +61,7 @@ class OrderArray {
                 return true;
             }
         }
+        System.out.println("value " + value +" is not found" );
         return false;
     }
 
