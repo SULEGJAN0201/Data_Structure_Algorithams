@@ -3,6 +3,8 @@ public class LinkedList {
         System.out.println("start coding");
         System.out.println("start coding");
         System.out.println("start coding");
+        System.out.println("start coding");
+        System.out.println("start coding");
 
     }
 }
