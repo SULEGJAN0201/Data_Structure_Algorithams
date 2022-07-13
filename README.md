@@ -1,3 +1,7 @@
 # Data_Structure_Algorithams
-**************Solve Hanoi Program Explanations*****************
-![image](https://user-images.githubusercontent.com/78686290/178813255-8db4178c-95c0-429f-a6fc-866157ec200e.png)
+Solve Hanoi Program Explanations
+<br>
+![image](https://user-images.githubusercontent.com/78686290/178814865-fbe0d416-993e-4ef6-a559-8641e7ad6937.png)
+<br>
+![image](https://user-images.githubusercontent.com/78686290/178814942-cd75e33e-32aa-4843-ac73-dbd8ad13a86c.png)
+
