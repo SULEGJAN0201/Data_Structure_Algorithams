@@ -31,6 +31,7 @@ class SelectionSort{
          System.out.println(Arrays.toString(arr));
      }
 }
+
 class BubbleSort{
     public void BubbleSortArr(int[] arr){
         for (int i=1;i<arr.length;i++) {
