@@ -5,7 +5,8 @@ public class SortingAlgorithms {
             SelectionSort s = new SelectionSort();
             int[] arr ={2,4,3,8,7,9,0,-1,1};
             s.SelectionSortArr(arr);
-
+            BubbleSort b= new BubbleSort();
+            b.BubbleSortArr(arr);
     }
 }
 
@@ -29,6 +30,19 @@ class SelectionSort{
 //         }
          System.out.println(Arrays.toString(arr));
      }
-
-
+}
+class BubbleSort{
+    public void BubbleSortArr(int[] arr){
+        for (int i=1;i<arr.length;i++) {
+            for (int j = 0; j <arr.length-i; j++) {
+                int temp;
+                if (arr[j] > arr[j + 1]) {
+                    temp=arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 }
