@@ -2,13 +2,20 @@ import java.util.Arrays;
 
 public class SortingAlgorithms {
     public static void main(String[] args) {
-            SelectionSort s = new SelectionSort();
             int[] arr ={2,4,3,8,7,9,0,-1,1};
+        //*********************************************************************************//
+            SelectionSort s = new SelectionSort();
             s.SelectionSortArr(arr);
+        //*********************************************************************************//
             BubbleSort b= new BubbleSort();
             b.BubbleSortArr(arr);
+        //*********************************************************************************//
             InsertionSort i =new InsertionSort();
             i.InsertionSortArr(arr);
+        //*********************************************************************************//
+            MergeSort m=new MergeSort();
+            int[] arrout= m.MergeSortArr(arr);
+            System.out.println(Arrays.toString(arrout));
     }
 }
 
@@ -66,4 +73,45 @@ class InsertionSort{
         }
         System.out.println(Arrays.toString(arr));
     }
+}
+class MergeSort{
+    public int[] MergeSortArr(int[] arr){
+        if (arr.length==1){
+            return arr;
+        }
+        int mid = arr.length/2;
+         int[] left =MergeSortArr(Arrays.copyOfRange(arr,0,mid));
+         int[] right=MergeSortArr(Arrays.copyOfRange(arr,mid,arr.length));
+
+         return merge(left,right);
+     }
+     public int[] merge(int[] first,int[] second){
+        int[] joinned = new int[first.length +second.length];
+        int i=0,j=0,k=0;
+        while (i< first.length && j< second.length){
+            if (first[i]<second[j]){
+                joinned[k]=first[i];
+                k++;
+                i++;
+            }
+            else {
+              joinned[k]=second[j];
+              k++;
+              j++;
+            }
+        }
+        while (i< first.length){
+            joinned[k]=first[i];
+            i++;
+            k++;
+        }
+        while (j<second.length){
+            joinned[k]=second[j];
+            k++;
+            j++;
+            // joinned[k++=second[j++];
+        }
+         return joinned;
+     }
+
 }
