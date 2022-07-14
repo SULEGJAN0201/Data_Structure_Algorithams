@@ -15,7 +15,7 @@ Selection Sorting
 <br>
 <br>
 Bubble Sort
-<br><br>
+<br>
 <br>
 ![image](https://user-images.githubusercontent.com/78686290/178999447-d38fb0bb-1315-48fe-90e0-7ed849a14c73.png)
 <br>
