@@ -18,7 +18,6 @@ Bubble Sort
 <br>
 <br>
 ![image](https://user-images.githubusercontent.com/78686290/179001582-c172f0b6-a8d9-4cb4-b7bc-18c6e16778d4.png)
-
 <br>
 <br>
 Insertion Sort
