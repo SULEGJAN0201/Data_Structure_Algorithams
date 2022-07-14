@@ -59,6 +59,8 @@ class InsertionSort{
                     arr[i+1]=arr[i];
                     arr[i]=temp;
                 }
+                else
+                break;
             }
 
         }
