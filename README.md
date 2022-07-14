@@ -11,18 +11,19 @@ Solve Hanoi Program Explanations
 Selection Sorting
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/78686290/178998829-78819368-db2f-4636-985f-06ef0d3b9ee7.png)
+![image](https://user-images.githubusercontent.com/78686290/179001434-a29e5a99-1ad5-497f-875f-82508c3a129a.png)
 <br>
 <br>
 Bubble Sort
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/78686290/178999447-d38fb0bb-1315-48fe-90e0-7ed849a14c73.png)
+![image](https://user-images.githubusercontent.com/78686290/179001582-c172f0b6-a8d9-4cb4-b7bc-18c6e16778d4.png)
+
 <br>
 <br>
 Insertion Sort
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/78686290/179000197-7399ddd3-e6f5-432b-86a2-f512bb7d8036.png)
+![image](https://user-images.githubusercontent.com/78686290/179001806-b3969b95-86c7-4402-ad9e-1a3997b8640d.png)
 <br>
 <br>
