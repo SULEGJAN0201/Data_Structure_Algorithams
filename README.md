@@ -23,6 +23,6 @@ Bubble Sort
 Insertion Sort
 <br>
 <br>
-![ScreenShot] (https://user-images.githubusercontent.com/78686290/179001806-b3969b95-86c7-4402-ad9e-1a3997b8640d.png)
+![image](https://user-images.githubusercontent.com/78686290/179001806-b3969b95-86c7-4402-ad9e-1a3997b8640d.png)
 <br>
 <br>
