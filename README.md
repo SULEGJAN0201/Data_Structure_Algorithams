@@ -7,7 +7,7 @@ Solve Hanoi Program Explanations
 <br>image-2
 ![image](https://user-images.githubusercontent.com/78686290/178814942-cd75e33e-32aa-4843-ac73-dbd8ad13a86c.png)
 
-<h3>SORTINY TECHNICS </h3>
+<h3>SORTING TECHNICS </h3>
 Selection Sorting
 <br>
 <br>
