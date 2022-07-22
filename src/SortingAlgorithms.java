@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class SortingAlgorithms {
     public static void main(String[] args) {
-            int[] arr ={2,4,3,8,7,9,0,-1,1};
+            int[] arr ={9,8,7,5,4};
         //*********************************************************************************//
             SelectionSort s = new SelectionSort();
             s.SelectionSortArr(arr);
@@ -43,16 +43,27 @@ class SelectionSort{
 
 class BubbleSort{
     public void BubbleSortArr(int[] arr){
+
+        int loopcom=0;
+        int count=0;
         for (int i=1;i<arr.length;i++) {
             for (int j = 0; j <arr.length-i; j++) {
-                int temp;
-                if (arr[j] > arr[j + 1]) {
+
+                loopcom++;
+                if (arr[j+1] < arr[j]) {
+                    int temp;
+                   count= count +1;
                     temp=arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1]=temp;
+                    System.out.println(count);
                 }
+
             }
+
         }
+
+        System.out.println(loopcom);
         System.out.println(Arrays.toString(arr));
     }
 }
