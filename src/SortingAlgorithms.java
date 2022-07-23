@@ -2,19 +2,25 @@ import java.util.Arrays;
 
 public class SortingAlgorithms {
     public static void main(String[] args) {
-            int[] arr ={9,8,7,5,4};
-        //*********************************************************************************//
+            int[] arr ={9,8,7,6,4};
+
+        System.out.print("Selection sort output : ");
             SelectionSort s = new SelectionSort();
             s.SelectionSortArr(arr);
-        //*********************************************************************************//
+
+        int[] arr2 ={9,8,7,6,4};
+        System.out.print("Bubble Sorting outout : ");
             BubbleSort b= new BubbleSort();
-            b.BubbleSortArr(arr);
-        //*********************************************************************************//
+            b.BubbleSortArr(arr2);
+        int[] arr3 ={9,8,7,6,4,3};
+        System.out.print("Insertion Sorting outout : ");
             InsertionSort i =new InsertionSort();
-            i.InsertionSortArr(arr);
-        //*********************************************************************************//
+            i.InsertionSortArr(arr3);
+
+        System.out.print("Merge Sorting outout : ");
+        int[] arr4 ={9,8,7,6,4};
             MergeSort m=new MergeSort();
-            int[] arrout= m.MergeSortArr(arr);
+            int[] arrout= m.MergeSortArr(arr4);
             System.out.println(Arrays.toString(arrout));
     }
 }
@@ -46,43 +52,50 @@ class BubbleSort{
 
         int loopcom=0;
         int count=0;
-        for (int i=1;i<arr.length;i++) {
-            for (int j = 0; j <arr.length-i; j++) {
+        for (int i=0;i<arr.length-1;i++) {
+            for (int j = 0; j <arr.length-i-1; j++) {
 
                 loopcom++;
                 if (arr[j+1] < arr[j]) {
                     int temp;
-                   count= count +1;
                     temp=arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1]=temp;
-                    System.out.println(count);
+                    count= count +1;
+
                 }
 
             }
 
         }
-
-        System.out.println(loopcom);
         System.out.println(Arrays.toString(arr));
+        System.out.println("No of time swap values in Bubble sort : " + count);
+        System.out.println("No of times inner for loop run Bubble sort : "+loopcom);
+
     }
 }
 
 class InsertionSort{
     public void InsertionSortArr(int[] arr){
-        for (int i=0;i<arr.length-5;i++){
-            for(int j=i+1;j>=0;j--){
-                if(arr[i]>arr[i+1]){
-                    int temp=arr[i];
-                    arr[i+1]=arr[i];
-                    arr[i]=temp;
+        int count=0;
+        for (int i=0;i<arr.length-1;i++){
+            for(int j=i+1;j>0;j--){
+
+                if(arr[j-1]>arr[j]){
+                    int temp=arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=temp;
+                    count++;
                 }
-                else
-                break;
+                else {
+                    break;
+                }
+
             }
 
         }
         System.out.println(Arrays.toString(arr));
+        System.out.println("Swapping count is(insertion sort) : " + count);
     }
 }
 class MergeSort{
